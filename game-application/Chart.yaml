@@ -1,0 +1,14 @@
+apiVersion: v2
+name: game-application
+description: A Helm chart for Game Application on EKS
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+keywords:
+  - game
+  - application
+  - eks
+  - aws
+maintainers:
+  - name: teju2707
+  
