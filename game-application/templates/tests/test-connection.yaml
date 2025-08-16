@@ -7,9 +7,9 @@ metadata:
   annotations:
     "helm.sh/hook": test
 spec:
+  restartPolicy: Never
   containers:
     - name: wget
       image: busybox
       command: ['wget']
       args: ['{{ include "game-application.fullname" . }}:{{ .Values.service.port }}']
-  restartPolicy: Never
